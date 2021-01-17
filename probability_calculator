@@ -1,0 +1,17 @@
+from random import random
+
+a = 0
+b = 0
+
+try:
+    d = float(input())
+    while True:
+        c = int(random() * d + 1)
+        if c == 1:
+            a += 1
+        b += 1
+        print(str(round(((a / b) * 100), 5)) + "%")
+except NameError:
+    print("Invalid value")
+except ValueError:
+    print("Invalid value")
